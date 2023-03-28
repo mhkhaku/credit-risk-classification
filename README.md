@@ -7,10 +7,20 @@
 
 - My aim is to distinguish between low-risk (healthy) and high-risk (non-healthy) loans by utilizing a machine learning model. For this purpose, I have developed two models using LogisticRegression and resampling techniques. The Logistic Regression Algorithm is particularly well-suited for this task as it is commonly used to calculate the probability of a target variable in classification problems.
 
-## The results
+## Results
 
 - Machine Learning Model 1 (LogisticRegression):
 
   - balanced_accuracy_score = 0.9520479254722232
   - precision 0=1.00, 1=0.85
   - recall 0=0.99, 1=0.91
+
+- Machine Learning Model 2 (RandomOverSampler):
+
+  - balanced_accuracy_score = 0.9936781215845847
+  - precision 0=0.99, 1=0.99
+  - recall 0=0.99, 1=0.99
+
+## Summary
+
+After conducting my analysis, I have concluded that the RandomOverSampler model is the most effective in identifying individuals who may be at a higher risk of defaulting on loans due to their credit history. The Logistic Regression model that was trained with OverSampled data demonstrated superior performance compared to the model that was trained with Imbalanced data, primarily due to the balanced nature of the dataset. As a result, the model achieved a higher accuracy score and recall rate, indicating its capability to make fewer errors when classifying non-healthy loans. In light of these findings, I would recommend using the RandomOverSampler model due to its higher accuracy and ability to identify classification errors.
