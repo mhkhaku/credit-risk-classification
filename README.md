@@ -11,6 +11,6 @@
 
 - Machine Learning Model 1 (LogisticRegression):
 
- - balanced_accuracy_score = 0.9520479254722232
- - precision 0=1.00, 1=0.85
- - recall 0=0.99, 1=0.91
+  - balanced_accuracy_score = 0.9520479254722232
+  - precision 0=1.00, 1=0.85
+  - recall 0=0.99, 1=0.91
